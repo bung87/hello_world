@@ -1,0 +1,73 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+<!--         <item name="android:windowNoTitle">true</item> -->
+<!--   <item name="android:background">@drawable/tenki</item> --> 
+      <item name="android:panelFullBackground">@android:color/white</item>
+       <item name="android:windowTitleSize">40dp</item>
+    <item name="android:windowTitleBackgroundStyle">@style/AppBaseTheme.CustomWindowTitleBackground</item>
+    </style>
+<style name="AppBaseTheme.CustomWindowTitleBackground">
+<item name="android:background">@drawable/linergradient</item>
+</style>
+
+     <!--  
+ <style name="GradientLight" parent="@android:style/Theme.Light">
+   <item name="android:windowBackground">@drawable/background</item>
+    <item name="android:progressBarStyle">@style/progressBar</item>
+    <item name="android:buttonStyle">@style/greenButton</item>
+    <item name="android:buttonStyleSmall">@style/greenButton</item>
+    <item name="android:listViewStyle">@style/listView</item>
+  <item name="android:itemBackground">@drawable/menu_selector</item>
+    <item name="android:spinnerStyle">@style/spinner</item>
+</style>-->
+<style name="listView" parent="@android:style/Widget.ListView.White">
+<item name="android:background">@android:color/white</item>
+<!-- <item name="android:listSelector">@drawable/list_selector_background_green</item> --> 
+</style>
+     <!-- Default theme for window that looks like a toast. -->
+  <style name="AppBaseTheme.Toast">
+      <item name="android:windowBackground">@drawable/grad</item>
+      <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+        <item name="android:backgroundDimEnabled">false</item>   
+  </style>
+<style name="AppBaseTheme.IconMenu">
+<!--    
+Menu/item attributes
+ https://code.google.com/p/android/issues/detail?id=4441 -->
+ 
+<item name="android:itemTextAppearance">@style/AppBaseTheme.IconMenu.TextAppearance</item>
+<item name="android:itemBackground">@drawable/menu_selector</item>
+<item name="android:itemIconDisabledAlpha">?android:attr/disabledAlpha</item>
+<item name="android:horizontalDivider">@android:drawable/divider_horizontal_bright</item>
+<!-- <item name="android:verticalDivider">@android:drawable/divider_vertical_bright</item> -->
+<!-- <item name="android:windowAnimationStyle">@android:style/Animation.OptionsPanel</item> -->
+<item name="android:moreIcon">@android:drawable/ic_menu_more</item>
+<item name="android:background">@null</item>
+</style>
+<!-- <style name="AppBaseTheme.Dialog" parent="@android:style/Theme.Holo"> -->
+<!--     @android:style/Theme.Holo.DialogWhenLarge" -->
+<!-- </style> -->
+<style name="AppBaseTheme.ExpandedMenu">
+  <!-- Menu/item attributes -->
+  <item name="android:itemTextAppearance">?android:attr/textAppearanceLarge</item>
+  <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
+<!--   <item name="android:windowAnimationStyle">@android:style/Animation.OptionsPanel</item> -->
+  <item name="android:background">@null</item>
+</style>
+<style name="AppBaseTheme.IconMenu.TextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+<item name="android:textColor">@android:color/black</item>
+</style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_wraper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup"
+    android:orientation="vertical" >
+
+<TextView
+    android:id="@+id/share_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:gravity="center"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:singleLine="true"
+    android:text="@string/share"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@android:color/black" />
+
+<ImageView
+    android:id="@+id/divider"
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@android:drawable/divider_horizontal_bright"
+    android:contentDescription="@+string/divider_horizontal_bright" />
+<ListView
+    android:id="@+id/share_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="#00000000"
+    android:divider="#ddd"
+    android:dividerHeight="1.0dip"
+    android:fadingEdge="none"
+    android:footerDividersEnabled="false"
+    android:headerDividersEnabled="true"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp" >
+
+</ListView>
+</LinearLayout>
